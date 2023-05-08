@@ -67,7 +67,7 @@ const Header = () => {
                     </div>
                     <div>
                         <Link className='d-flex align-items-center gap-10 text-white'>
-                         {/* <img src="images/cart.svg" alt="cart" />*/} 
+                        <img src="images/cart.png" alt="cart" />
                             <div className='d-flex flex-column'>
                                 <span className='badge bg-white text-dark'>0</span>
                                 <p className='mb-0'>P 0.00</p>
