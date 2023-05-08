@@ -22,10 +22,15 @@ const Home = () => {
           <div className='d-flex flex-wrap justify-content-between align-items-center'>
             <div className='small-banner position-relative p-3'>
               <img
-              src="images/main-banner-1.jpg"
+              src="images/catbanner-02.jpg"
               className='img-fluid rounded-3'
               alt='main banner'
               />
+              <div className='small-banner-content position-absolute'>
+                <h4>Experienced HD Sounds</h4>
+                <h5>G-30</h5>
+                <Link className='button'>BUY NOW</Link>
+              </div>
               </div>
             </div>
           </div>
