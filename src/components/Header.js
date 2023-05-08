@@ -70,7 +70,7 @@ const Header = () => {
                         <img src="images/cart.png" alt="cart" />
                             <div className='d-flex flex-column'>
                                 <span className='badge bg-white text-dark'>0</span>
-                                <p className='mb-0'>P 0.00</p>
+                                <p className='mb-0'>₱ 0.00</p>
                             </div>
                         </Link>
                         </div>
