@@ -77,45 +77,44 @@ const Home = () => {
           <div className='col-12'>
             <div className='services d-flex align-items-center justify-content-between'>
               <div>
-                <img src="images" alt="services" />
+                <img src="images/service.png" alt="services" />
                 <div>
-                  <h6></h6>
-                  <p></p>
+                  <h6>Free Shipping</h6>
+                  <p>From all orders</p>
                 </div>
               </div>
               <div>
-                <img src="" alt="services" />
+                <img src="images/service-02.png" alt="services" />
                 <div>
-                  <h6></h6>
-                  <p></p>
+                  <h6>Daily Offers</h6>
+                  <p>Save upto 60% off</p>
                 </div>
               </div>
               <div>
-                <img src="" alt="services" />
+                <img src="images/service-03.png" alt="services" />
                 <div>
-                  <h6></h6>
-                  <p></p>
+                  <h6>Active 24/7</h6>
+                  <p>Let's go and shop!</p>
                 </div>
               </div>
               <div>
-                <img src="" alt="services" />
+                <img src="images/service-04.png" alt="services" />
                 <div>
-                  <h6></h6>
-                  <p></p>
+                  <h6>Affordable Prices</h6>
+                  <p>Get Factory Price</p>
                 </div>
               </div>
               <div>
-                <img src="" alt="services" />
+                <img src="images/service-05.png" alt="services" />
                 <div>
-                  <h6></h6>
-                  <p></p>
+                  <h6>Secure Payments</h6>
+                  <p>100% Protected Payment</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
     </>
   )
