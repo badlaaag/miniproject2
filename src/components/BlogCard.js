@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const BlogCard = () => {
   return (
@@ -8,9 +9,12 @@ const BlogCard = () => {
             <img src="images/blog-1.jpg" className="img-fluid" alt="blog" />
             </div>
             <div className="blog-content">
-                <p className="date"></p>
-                <h5 className="title"></h5>
-                <p className="desc"></p>
+                <p className="date">January 1, 2022</p>
+                <h5 className="title">Title</h5>
+                <p className="desc">lorem ipsum</p>
+                <Link to ="/" className="button">
+                  Read More
+                </Link>
             </div>
         </div>
     </div>
