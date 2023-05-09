@@ -4,8 +4,12 @@ import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from '../components/ProductCard';
 import Container from "../components/Container";
+<<<<<<< Updated upstream
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
+=======
+import SpecialProduct from '../components/SpecialProduct';
+>>>>>>> Stashed changes
 
 const Home = () => {
   return (
@@ -199,6 +203,69 @@ const Home = () => {
          <ProductCard />
          <ProductCard />
         </div>
+      </div>
+      </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img 
+                src="images//famous-1.webp"
+                className="img-fluid"
+                alt="famous" 
+                />
+                <div className="famous-content position-absolute">
+                <h5>Wide Screen</h5>
+                <h6>Samsung Smart Watch</h6>
+                <p>From ₱10.000 ₱500.00/mo. for 24 mo.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img 
+                  src="images//famous-1.webp"
+                  className="img-fluid"
+                  alt=""
+                  />
+                <div className="famous-content position-absolute">
+                <h5>Wide Screen</h5>
+                <h6>Samsung Smart Watch</h6>
+                <p>From ₱10.000 ₱500.00/mo. for 24 mo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Popular Now</h3>
+            </div>
+          </div>
+            <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            </div>
       </div>
       </section>
       <section className="marquee-wrapper py-5">
