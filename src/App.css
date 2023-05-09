@@ -131,7 +131,7 @@ footer .input-group-text {
   text-transform: uppercase;
 }
 .main-banner-content h5{
-  font-size: 49px;
+  font-size: 42px;
   line-height: 54px;
   letter-spacing: -2px;
   font-weight: 500;
@@ -228,6 +228,21 @@ background-color: var(--color-f5f5f7);
   border-radius: 10px;
   overflow: hidden;
 }
+.product-card .product-image{
+  height: 270px;
+}
+.product-card .product-image img{
+  object-fit: contain;
+}
+.product-card .product-image>img:last-child{
+  display: none;
+}
+.product-card:hover .product-image>img:nth-child(1){
+  display: none;
+}
+.product-card:hover .product-image>img:last-child{
+  display: block;
+}
 .product-card:hover .action-bar{
   right: 15px;
 }
@@ -247,4 +262,8 @@ background-color: var(--color-f5f5f7);
   top: 10%;
   right: -23px;
   transition: 0.3s;
+}
+.wishlist-icon{
+  top:2%;
+  right: 15px;
 }
