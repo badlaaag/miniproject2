@@ -3,12 +3,12 @@ import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from 'react-router-dom';
 
 const ProductCard = (props) => {
-  const { grid } = props;
-  let location = useLocation();
-  return (
+    const { grid } = props;
+    let location = useLocation();
+    return (
     <>
-    <div className={` ${location.pathname == "/store" ? `col-${grid}` : "col-3"} `}>
-        <div className="product-card position-relative">
+    <div className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"} `}>
+        <Link className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
                 <Link>
                 <img src="images/wish.svg" alt="wishlist" />
@@ -20,14 +20,14 @@ const ProductCard = (props) => {
             </div>
             <div className="product-details">
                 <h6 className="brand">Smart Watch</h6>
-                <h5 className="product-title">lorem ipsum</h5>
+                <h5 className="product-title">lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum </h5>
                 <ReactStars
                     count={5}   
                     size={24}
-                    value={4}
+                    value="3"
                     edit={false}
                     activeColor="#ffd700"
-                />
+                    />
                 <p className="price">P1000.00</p>
             </div>
             <div className="action-bar position-absolute">
@@ -43,10 +43,10 @@ const ProductCard = (props) => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </Link>
     </div>
-    <div className={` ${location.pathname == "/store" ? `col-${grid}` : "col-3"} `}>
-        <div className="product-card position-relative">
+    <div className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"} `}>
+        <Link className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
                 <Link>
                 <img src="images/wish.svg" alt="wishlist" />
@@ -58,7 +58,7 @@ const ProductCard = (props) => {
             </div>
             <div className="product-details">
                 <h6 className="brand">Smart Watch</h6>
-                <h5 className="product-title">lorem ipsum</h5>
+                <h5 className="product-title">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</h5>
                 <ReactStars
                     count={5}   
                     size={24}
@@ -81,7 +81,7 @@ const ProductCard = (props) => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </Link>
     </div>
     </>
   );
