@@ -4,19 +4,17 @@ import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from '../components/ProductCard';
 import Container from "../components/Container";
-<<<<<<< Updated upstream
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
-=======
 import SpecialProduct from '../components/SpecialProduct';
->>>>>>> Stashed changes
+
 
 const Home = () => {
   return (
     <>
     <Meta title={"Home"}/>
     <BreadCrumb  title="Home" />
-    <section className="home-wrapper-1 py-5">
+    <Container class1="home-wrapper-1 py-5">
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-6'>
@@ -82,8 +80,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
-    <section className='home-wrapper-2 py-5'>
+    </Container>
+    <Container class1='home-wrapper-2 py-5'>
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-12'>
@@ -127,7 +125,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
     <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
@@ -172,28 +170,27 @@ const Home = () => {
                   <h6></h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="camera" />
+                <img src="images/headphone.jpg" alt="" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Mobile</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="camera" />
+                <img src="images/headphone.jpg" alt="" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Smart Watches</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="camera" />
+                <img src="images/headphone.jpg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </Container>
-      <section className="featured-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="featured-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Featured Products</h3>
@@ -203,44 +200,72 @@ const Home = () => {
          <ProductCard />
          <ProductCard />
         </div>
-      </div>
-      </section>
-      <section className="famous-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-3">
-              <div className="famous-card position-relative">
-                <img 
-                src="images//famous-1.webp"
+      </Container>
+      <Container class1="famous-wrapper py-5 home-wrapper-2">
+        <div className="row">
+          <div className="col-3">
+            <div className="famous-card position-relative">
+              <img
+                src="images/famous-1.webp"
                 className="img-fluid"
-                alt="famous" 
-                />
-                <div className="famous-content position-absolute">
-                <h5>Wide Screen</h5>
-                <h6>Samsung Smart Watch</h6>
-                <p>From ₱10.000 ₱500.00/mo. for 24 mo.</p>
-                </div>
+                alt="famous"
+              />
+              <div className="famous-content position-absolute">
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>lorem</p>
               </div>
             </div>
-            <div className="col-3">
-              <div className="famous-card position-relative">
-                <img 
-                  src="images//famous-1.webp"
-                  className="img-fluid"
-                  alt=""
-                  />
-                <div className="famous-content position-absolute">
-                <h5>Wide Screen</h5>
-                <h6>Samsung Smart Watch</h6>
-                <p>From ₱10.000 ₱500.00/mo. for 24 mo.</p>
-                </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative">
+              <img
+                src="images/famous-2.webp"
+                className="img-fluid"
+                alt="famous"
+              />
+              <div className="famous-content position-absolute">
+                <h5 className="text-dark">Studio Display</h5>
+                <h6 className="text-dark">600 nits of brightness.</h6>
+                <p className="text-dark">27-inch 5K Retina display</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative">
+              <img
+                src="images/famous-3.webp"
+                className="img-fluid"
+                alt="famous"
+              />
+              <div className="famous-content position-absolute">
+                <h5 className="text-dark">smartphones</h5>
+                <h6 className="text-dark">Smartphone 13 Pro.</h6>
+                <p className="text-dark">
+                  lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="famous-card position-relative">
+              <img
+                src="images/famous-3.webp"
+                className="img-fluid"
+                alt="famous"
+              />
+              <div className="famous-content position-absolute">
+                <h5 className="text-dark">home speakers</h5>
+                <h6 className="text-dark">Room-filling sound.</h6>
+                <p className="text-dark">
+                  lorem
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="special-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="special-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Special Products</h3>
@@ -250,11 +275,10 @@ const Home = () => {
             <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />
+            <SpecialProduct />
           </div>
-        </div>
-      </section>
-      <section className="popular-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="popular-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Popular Now</h3>
@@ -266,10 +290,8 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
             </div>
-      </div>
-      </section>
-      <section className="marquee-wrapper py-5">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="marquee-wrapper py-5">
           <div className="row">
             <div className="col-12">
               <div className="marquee-inner-wrapper card-wrapper">
@@ -310,10 +332,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="blog-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="blog-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">From The Blogs</h3>
@@ -323,9 +343,7 @@ const Home = () => {
          <BlogCard />
          <BlogCard />
         </div>
-      </div>
-      </section>
-
+      </Container>
     </>
   )
 }
