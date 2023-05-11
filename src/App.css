@@ -503,7 +503,7 @@ width: 48%;
   line-height: 22px;
   font-weight: 400;
 }
-.compare-product-card .product-detail{
+.compare-product-card .product-details{
   display: flex;
   justify-content: space-between;
   align-items: center;
