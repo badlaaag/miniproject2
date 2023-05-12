@@ -15,7 +15,7 @@ const Home = () => {
           <div className="col-6">
             <div className="main-banner position-relative ">
               <img
-                src="images/main-banner-1.jpg"
+                src="images/bannermusic.jpg"
                 className="img-fluid rounded-3"
                 alt="main banner"
               />

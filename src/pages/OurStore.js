@@ -29,7 +29,7 @@ const OurStore = () => {
             <div className="filter-card mb-3">
               <h3 className="filter-title">Filter By</h3>
               <div>
-                <h5 className="sub-title">Availablity</h5>
+                <h5 className="sub-title">Availability</h5>
                 <div>
                   <div className="form-check">
                     <input
@@ -147,7 +147,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>₱ 3000</b>
                   </div>
                 </div>
                 <div className="random-products d-flex">
@@ -169,7 +169,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>₱ 3000</b>
                   </div>
                 </div>
               </div>
