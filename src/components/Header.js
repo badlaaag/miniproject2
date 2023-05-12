@@ -1,7 +1,21 @@
-import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import {BsSearch} from 'react-icons/bs';
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { BsSearch } from 'react-icons/bs';
+
 const Header = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      console.log('Perform search for:', searchQuery);
+      setSearchQuery('');
+    }
+  };
+
   return (
     <>
     <header className="header-top-strip py-3">
@@ -22,18 +36,21 @@ const Header = () => {
             <div className='row align-items-center'>
                 <div className='col-2'>
                     <h1>
-                        <Link className='text-white fs-3'>Tech-O-Matic</Link>
+                        <Link to='/' className='text-white fs-3'>Tech-O-Matic</Link>
                     </h1>
                 </div>
                 <div className='col-5'>
                     <div className="input-group">
-                        <input
-                         type="text" 
-                         className="form-control py-2" 
-                         placeholder="Search Products..." 
-                         aria-label="Search Products..." 
-                         aria-describedby="basic-addon2"
-                         />
+                    <input
+              type="text"
+              className="form-control py-2"
+              placeholder="Search Products..."
+              aria-label="Search Products..."
+              aria-describedby="basic-addon2"
+              value={searchQuery} // Display the search query value in the input field
+              onChange={handleSearch}
+              onKeyPress={handleKeyPress}
+            />
                         <span class="input-group-text p-3" id="basic-addon2">
                            <BsSearch className='fs-6' />
                         </span>

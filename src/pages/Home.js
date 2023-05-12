@@ -5,11 +5,13 @@ import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
+import PopupAd from "../components/PopupAd";
 
 
 const Home = () => {
   return (
     <>
+    
       <Container class1="home-wrapper-1 py-5">
         <div className="row">
           <div className="col-6">
@@ -240,7 +242,7 @@ const Home = () => {
       <Container class1="special-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
-            <h3 className="section-heading">Special Products</h3>
+            <h3 className="section-heading">Special Promo</h3>
           </div>
         </div>
         <div className="row">
@@ -318,6 +320,7 @@ const Home = () => {
             <BlogCard />
           </div>
         </div>
+        <PopupAd />
       </Container>
     </>
   );

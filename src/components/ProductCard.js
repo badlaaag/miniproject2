@@ -13,6 +13,8 @@ const ProductCard = (props) => {
   console.log(grid);
   let location = useLocation();
 
+  
+
   return (
     <>
       <div

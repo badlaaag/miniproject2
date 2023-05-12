@@ -6,6 +6,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 
+
 const Cart = () => {
   return (
     <>

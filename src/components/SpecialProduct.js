@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
+
 const SpecialProduct = () => {
+  const [timer, setTimer] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const endDate = new Date("2023-05-15"); 
+    const interval = setInterval(() => {
+      const now = new Date();
+      const timeDifference = endDate.getTime() - now.getTime();
+      if (timeDifference <= 0) {
+        // Timer has ended, do something
+        clearInterval(interval);
+      } else {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        setTimer({ days, hours, minutes, seconds });
+      }
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <>
       <div className="col-6 mb-3">
@@ -12,27 +36,19 @@ const SpecialProduct = () => {
             </div>
             <div className="special-product-content">
               <h5 className="brand">Havels</h5>
-              <h6 className="title">
-                Samsung Galaxy Note10+ Mobile Phone; Sim...
-              </h6>
-              <ReactStars
-                count={5}
-                size={24}
-                value={4}
-                edit={false}
-                activeColor="#ffd700"
-              />
+              <h6 className="title">Samsung Galaxy Note10+ Mobile Phone; Sim...</h6>
+              <ReactStars count={5} size={24} value={4} edit={false} activeColor="#ffd700" />
               <p className="price">
-                <span className="red-p">$100</span> &nbsp; <strike>$200</strike>
+                <span className="red-p">₱10000</span> &nbsp; <strike>₱20000</strike>
               </p>
               <div className="discount-till d-flex align-items-center gap-10">
                 <p className="mb-0">
-                  <b>5 </b>days
+                  <b>{timer.days}</b> days
                 </p>
                 <div className="d-flex gap-10 align-items-center">
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>:
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>:
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>
+                  <span className="badge rounded-circle p-3 bg-danger">{timer.hours}</span>:
+                  <span className="badge rounded-circle p-3 bg-danger">{timer.minutes}</span>:
+                  <span className="badge rounded-circle p-3 bg-danger">{timer.seconds}</span>
                 </div>
               </div>
               <div className="prod-count my-3">
