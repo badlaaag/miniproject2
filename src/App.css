@@ -743,6 +743,8 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* Shipping page ends here */
+
+/*advertisement pop up*/
 .popup-ad {
   position: fixed;
   top: 0;
