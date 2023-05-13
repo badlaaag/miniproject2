@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Container class1="home-wrapper-1 py-5">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="main-banner position-relative ">
               <img
                 src="images/main-banner-1.jpg"
@@ -27,7 +27,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
               <div className="small-banner position-relative">
                 <img
@@ -99,7 +99,7 @@ const Home = () => {
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
-            <div className="categories d-flex justify-content-between flex-wrap align-items-center">
+            <div className="col-md categories d-flex justify-content-between flex-wrap align-items-center">
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Music & Gaming</h6>
@@ -174,7 +174,7 @@ const Home = () => {
 
       <Container class1="famous-wrapper py-5 home-wrapper-2">
         <div className="row">
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="famous-card position-relative">
               <img
                 src="images/famous-1.webp"
@@ -188,7 +188,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="famous-card position-relative">
               <img
                 src="images/famous-2.webp"
@@ -202,7 +202,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="famous-card position-relative">
               <img
                 src="images/famous-3.webp"
@@ -218,7 +218,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="famous-card position-relative">
               <img
                 src="images/famous-3.webp"
@@ -305,16 +305,16 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-3">
+          <div className="col-md-3">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <BlogCard />
           </div>
         </div>

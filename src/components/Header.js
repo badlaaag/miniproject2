@@ -31,12 +31,12 @@ const Header = () => {
       <header className="header-upper py-3">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-2">
+            <div className="col-md-2">
               <h2>
-                <Link className="text-white">Dev Corner</Link>
+                <Link className="text-white fs-3">Tech-O-Matic</Link>
               </h2>
             </div>
-            <div className="col-5">
+            <div className="col-md-5">
               <div className="input-group">
                 <input
                   type="text"
@@ -50,7 +50,7 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-md-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
