@@ -13,6 +13,8 @@
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
+  --color-531516: #531516;
+  --color-661b1c: #802b2d;
 }
 .section-heading {
   font-size: 26px;
@@ -68,7 +70,7 @@ a {
   background-color: var(--color-131921);
 }
 .header-bottom {
-  background-color: var(--color-232f3e);
+  background-color: var(--color-531516);
 }
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
@@ -104,12 +106,41 @@ a {
   background-color: transparent;
   color: var(--color-febd69) !important;
 }
+@media only screen and (max-width: 1600px) {
+  .header-upper-links p{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header-upper-links p{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-upper-links p{
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-upper-links {
+    padding-top: 20px;
+  }
+  .header-upper-links p {
+    font-size: 15px;
+  }
+} 
+@media only screen and (max-width: 375) {
+  .header-upper-links p{
+    font-size: 10px;
+  }
+}
+
 /* Header Part End Here */
 
 /* Footer Part */
 
 footer {
-  background-color: var(--color-232f3e);
+  background-color: var(--color-531516);
 }
 
 footer:not(:first-child) {
