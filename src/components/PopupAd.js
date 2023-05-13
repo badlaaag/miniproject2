@@ -17,7 +17,7 @@ const PopupAd = () => {
               X
             </button>
             <h2 className="popup-title">Popup Advertisement</h2>
-            <p className="popup-text">Here goes your advertisement content.</p>
+            <p className="popup-text">VINS BENCH MODEL</p>
             <div className="popup-video">
               
             </div>
