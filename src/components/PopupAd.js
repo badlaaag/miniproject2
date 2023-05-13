@@ -5,9 +5,18 @@ const PopupAd = () => {
 
   const handleClose = () => {
     setIsOpen(false);
+    sessionStorage.setItem("adDisplayed", "true");
   };
 
- 
+  useEffect(() => {
+    const hasAdDisplayed = sessionStorage.getItem("adDisplayed");
+    if (hasAdDisplayed) {
+      setIsOpen(false);
+    } else {
+      sessionStorage.setItem("adDisplayed", "true");
+    }
+  }, []);
+
   return (
     <>
       {isOpen && (
@@ -18,9 +27,7 @@ const PopupAd = () => {
             </button>
             <h2 className="popup-title">Popup Advertisement</h2>
             <p className="popup-text">VINS BENCH MODEL</p>
-            <div className="popup-video">
-              
-            </div>
+            <div className="popup-video"></div>
           </div>
         </div>
       )}
